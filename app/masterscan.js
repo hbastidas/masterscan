@@ -64,6 +64,8 @@ class Masterscan {
     scanInt(progressCallBack){
         if (!this.hasRootAccount){
             this.accounts.push(this.initRootAccount());
+            this.accounts.push(this.initCoreAccount());
+            this.accounts.push(this.initBip44Account());
             this.hasRootAccount = true;
         }
 
