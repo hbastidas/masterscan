@@ -47,7 +47,7 @@ class Masterscan {
             }
         }
         this.maxAccountGap = 6;
-        this.maxChainGap = {external: 25, change: 5};
+        this.maxChainGap = {external: 25, change: 50};
         this.bip44Accounts = new Accounts();
         this.accounts = new Accounts();
     }
